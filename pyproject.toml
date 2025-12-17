@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pyfeistel"
+version = "0.1.0"
+description = "A pure-Python Feistel Network Block Cipher Implementation"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+authors = [{name = "CryptoEngineer", email = "dev@example.com"}]
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest", "hypothesis", "coverage"]
+dev = ["black", "ruff", "mypy"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/pyfeistel"]
+
+[tool.pytest.ini_options]
+addopts = "--cov=pyfeistel --cov-report=term-missing"
+testpaths = ["tests"]
+pythonpath = ["src"]

@@ -1,0 +1,11 @@
+# Core Dependencies (none for the library itself)
+# hachling (build backend) handled by pyproject.toml
+
+# Testing & Verification
+pytest
+pytest-cov
+nistrng
+
+# Visualization Examples
+matplotlib
+numpy
