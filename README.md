@@ -19,6 +19,12 @@ A pure-Python Feistel Network Block Cipher Implementation.
 pip install .
 ```
 
+Or
+
+```bash
+pip install pyfeistel
+```
+
 ## Usage
 
 ### Basic Encryption (CBC Mode)
