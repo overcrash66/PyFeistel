@@ -4,17 +4,32 @@ build-backend = "hatchling.build"
 
 [project]
 name = "pyfeistel"
-version = "0.1.0"
+version = "0.1.1"
 description = "A pure-Python Feistel Network Block Cipher Implementation"
 readme = "README.md"
 requires-python = ">=3.10"
 license = {file = "LICENSE"}
-authors = [{name = "CryptoEngineer", email = "dev@example.com"}]
+authors = [{name = "Wael SAHLI"}]
 dependencies = []
+keywords = ["cryptography", "feistel", "block-cipher", "encryption"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+    "Topic :: Security :: Cryptography",
+]
 
 [project.optional-dependencies]
 test = ["pytest", "hypothesis", "coverage"]
 dev = ["black", "ruff", "mypy"]
+
+[project.urls]
+Homepage = "https://github.com/overcrash66/PyFeistel"
+Repository = "https://github.com/overcrash66/PyFeistel"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/pyfeistel"]
